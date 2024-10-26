@@ -1,0 +1,5 @@
+# Python packages needed for the subdomain scanning tool
+sublist3r
+subfinder
+assetfinder
+httpx
