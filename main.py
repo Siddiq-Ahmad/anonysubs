@@ -62,7 +62,7 @@ def live_subdomain_filter(project_dir):
 
 def display_logo():
     """Display the ASCII logo at the start of the tool."""
-    logo = """
+    logo = r"""
                                     ___   ___  
      /\                            / _ \ / _ \ 
     /  \   _ __   ___  _ __  _   _| | | | (_) |
