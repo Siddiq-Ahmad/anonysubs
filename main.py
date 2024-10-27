@@ -1,7 +1,6 @@
 import os
 import subprocess
 import sys
-import re
 
 def create_directory(project_name):
     """Create a directory for the project inside the Targets folder."""
@@ -27,8 +26,8 @@ def subdomain_scan(domain, project_dir):
             # Assetfinder
             subprocess.run(['assetfinder', '--subs-only', domain], stdout=f)
             
-            # crt.sh
-            crt_sh_command = f"curl -s https://crt.sh/?q={domain}&output=json | jq -r '.[].name_value' | grep -Po '(\w+\.\w+\.\w+)$'"
+            # crt.sh (using raw string for escape sequence handling)
+            crt_sh_command = rf"curl -s https://crt.sh/?q={domain}&output=json | jq -r '.[].name_value' | grep -Po '(\w+\.\w+\.\w+)$'"
             subprocess.run(crt_sh_command, shell=True, stdout=f)
         
         # Remove duplicate entries
