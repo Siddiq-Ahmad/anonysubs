@@ -39,7 +39,7 @@ def main():
     project_name = input("Enter the exact project name: ")
 
     # Define the command to run
-    command = f"cat Targets/{project_name}/subs.txt | httpx-toolkit -ports 80,443,8080,8000,8888 -threads 200 > Targets>
+    command = f"cat Targets/{project_name}/subs.txt | httpx-toolkit -ports 80,443,8080,8000,8888 -threads 200 -mc 200,403 -title -tech-detect > Targets
 
     try:
         # Execute the command
