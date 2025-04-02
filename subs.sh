@@ -10,11 +10,11 @@ print_colored_banner() {
     # Your ASCII art
     local ascii_art="
                                     ___   ___
-     /\\                            / _ \\ / _ \\
-    /  \\   _ __   ___  _ __  _   _| | | | (_) |
-   / /\\ \\ | '_ \\ / _ \\| '_ \\| | | | | | |> _ <
-  / ____ \\| | | | (_) | | | | |_| | |_| | (_) |
- /_/    \\_\\_| |_|\\___/|_| |_|\\__, |\\___/ \\___/
+     /\                            / _ \ / _ \\
+    /  \   _ __   ___  _ __  _   _| | | | (_) |
+   / /\ \ | '_ \ / _ \| '_ \| | | | | | |> _ <
+  / ____ \| | | | (_) | | | | |_| | |_| | (_) |
+ /_/    \_\_| |_|\___/|_| |_|\__, |\___/ \___/
                               __/ |
                              |___/
     "
@@ -43,12 +43,11 @@ create_project() {
     mkdir -p "$project_path"
 
     # Define the command to execute
-    local command="sublist3r -d $domain -o ${project_path}/subs.txt && \
-subfinder -d $domain -o ${project_path}/subs.txt && \
-findomain -t $domain -u ${project_path}/subs.txt && \
-assetfinder -subs-only $domain >> ${project_path}/subs.txt && \
-sort ${project_path}/subs.txt | uniq > ${project_path}/temp.txt && \
-mv ${project_path}/temp.txt ${project_path}/subs.txt"
+    local command="subfinder -d $domain -o ${project_path}/subs.txt && \
+assetfinder --subs-only $domain | tee -a ${project_path}/subs.txt && \
+amass enum -passive -d $domain -o ${project_path}/subs.txt && \
+bbot -t $domain -p subdomain-enum | tee -a ${project_path}/subs.txt && \
+findomain -t $domain -u ${project_path}/subs.txt"
 
     # Execute the command
     echo "Executing command:"
