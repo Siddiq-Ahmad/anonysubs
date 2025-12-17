@@ -1,3 +1,15 @@
+<pre>
+<span style="color:#f1c40f;">
+  /$$$$$$            /$$             /$$$$$$$$                                    
+ /$$__  $$          | $$            |__  $$__/                                    
+| $$  \__/ /$$   /$$| $$$$$$$          | $$  /$$$$$$  /$$$$$$   /$$$$$$$  /$$$$$$ 
+|  $$$$$$ | $$  | $$| $$__  $$         | $$ /$$__  $$|____  $$ /$$_____/ /$$__  $$
+ \____  $$| $$  | $$| $$  \ $$         | $$| $$  \__/ /$$$$$$$| $$      | $$$$$$$$
+ /$$  \ $$| $$  | $$| $$  | $$         | $$| $$      /$$__  $$| $$      | $$_____/
+|  $$$$$$/|  $$$$$$/| $$$$$$$/         | $$| $$     |  $$$$$$$|  $$$$$$$|  $$$$$$$
+ \______/  \______/ |_______/          |__/|__/      \_______/ \_______/ \_______/
+</span>
+</pre>                                                                                
 # 🔍 Sub Trace
 
 A **fast, clean, and reliable penetration testing automation tool** for **subdomain enumeration** and **alive host discovery**, built for bug bounty hunters, red teamers, and cybersecurity students.
