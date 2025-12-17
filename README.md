@@ -1,8 +1,8 @@
-# 🔍 AnonySub
+# 🔍 Sub Trace
 
 A **fast, clean, and reliable penetration testing automation tool** for **subdomain enumeration** and **alive host discovery**, built for bug bounty hunters, red teamers, and cybersecurity students.
 
-AnonySub combines multiple industry‑standard tools into a **single, interactive workflow**, producing **deduplicated, DNS‑resolved subdomains** and **clean, HTTPS‑preferred alive URLs** — ready for further exploitation.
+Sub Trace combines multiple industry‑standard tools into a **single, interactive workflow**, producing **deduplicated, DNS‑resolved subdomains** and **clean, HTTPS‑preferred alive URLs** — ready for further exploitation.
 
 > ⚡ Built with simplicity, speed, and real‑world recon in mind.
 
@@ -66,7 +66,7 @@ Make sure the following tools are installed and available in your `$PATH`:
 
 ```bash
 git clone https://github.com/Siddiq-Ahmad/anonysubs.git
-cd anonysubs
+cd Sub Traces
 chmod +x subs.sh alive.sh
 ```
 
@@ -108,7 +108,7 @@ Targets/<project-name>/
 
 ---
 
-## 🔐 Why AnonySubs?
+## 🔐 Why Sub Traces?
 
 ✔ Combines **best recon tools** into one flow
 ✔ Eliminates duplicate noise
@@ -153,6 +153,8 @@ This tool is intended **for educational purposes and authorized security testing
 The author takes **no responsibility** for misuse.
 
 ---
+## 🔗 Connect with Me
+<p align="left"> <a href="https://www.linkedin.com/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/> </a> <a href="https://www.instagram.com/" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/> </a> <a href="https://your-portfolio-website.com" target="_blank"> <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white"/> </a> </p>
 
 ## ⭐ Support
 
